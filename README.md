@@ -20,9 +20,6 @@ This application has the following endpoints
 
 There is a [postmand collection](/postman/Flask_CRUD_APP.postman_collection.json) available with all requests. You can import the collection in your [Postman](https://www.getpostman.com/) application using the JSON file.
 
-## Demo
-https://flask-crud-ashwani.herokuapp.com/
-
 ## Local environment setup
 
 ### Technology components
@@ -71,11 +68,4 @@ celery worker -A app.celery
 flask run --port=5000
 ```
 
-That's it! The API will be serving on `http://127.0.0.1:5000`
-
-For email notifications, you can change `MAIL_SERVER`, `MAIL_PORT` variables in `config.py`. Currently they are set on localhost port 8025 by default. To see emails notifications working, spin up a local SMTP server using Python's `smtpd` module
-
-```sh
-python3 -m smtpd -n -c DebuggingServer localhost:8025
-```
 
