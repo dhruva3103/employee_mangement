@@ -79,5 +79,3 @@ For email notifications, you can change `MAIL_SERVER`, `MAIL_PORT` variables in 
 python3 -m smtpd -n -c DebuggingServer localhost:8025
 ```
 
-## License
-GNU GPL 3.0
